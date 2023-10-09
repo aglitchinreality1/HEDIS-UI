@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEDIS</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css"/>
+</head>
+<body>
+    <div class="turbo">
+        <div class="blackbox2"></div>
+        <div class="goldbox2"></div>
+        <div class="cam">
+            <div class="inner"></div>
+        </div>
+        <div class="camtext">AI Camera - On</div>
+        <div class="timebar d-flex justify-content-center">
+            <div class="col col-sm-12 p-0 w-50 d-flex justify-content-center bg-info text-Gold rounded-bottom-4 h4" id="time">
+                <!-- The live time will be displayed here -->
+            </div>
+        </div>   
+        <div class="battery">
+            <div class="bat">
+                <div id="battery-container">
+                    <div class="battery-bar" id="bar1"></div>
+                    <div class="battery-bar" id="bar2"></div>
+                    <div class="battery-bar" id="bar3"></div>
+                </div>
+            </div>
+            <div class="batcap"></div>    
+            <div id="battery-status">
+                CAPACITY: <span id="battery-percentage">Fetching...</span>
+            </div>
+            <div id="range-display">
+                TRAVERSAL RANGE: <span id="range-value">0</span> KM
+            </div>
+        </div>     
+        <div class="modes">
+            <button class="b1" onclick="showClass('push'); readTextFromDiv('nt', 0); displayClass('pushm')">PUSH</button>
+            <button class="b2" onclick="showClass('eco'); readTextFromDiv('nt', 1); displayClass('ecom')">ECO</button>
+            <button class="b3" onclick="showClass('tur'); readTextFromDiv('nt', 2); displayClass('turbom')">TURBO</button>
+        </div>
+        <div class="currentmode">
+            <div class="push">
+                <div class="pushnotify">
+                    <div class="heading head1">PUSH MODE</div>
+                </div>
+            </div>
+            <div class="eco">
+                <div class="econotify">
+                    <div class="heading head2">ECO MODE</div>
+                </div>
+            </div>
+            <div class="tur">
+                <div class="turbonotify">
+                    <div class="heading head3">TURBO MODE</div>
+                </div>
+            </div>
+        </div>
+        <div class="notificationbar">
+            <div id="notifybox">
+                <div class="n n1">
+                    <div class="nt t1">PUSH MODE ACTIVATED! YOU CAN ACCESS MAX TORQUE FOR PARKING AND OBSTACLE CLEARANCE</div>
+                </div>
+                <div class="n n2">
+                    <div class="nt t2">ECO MODE ACTIVATED! YOU CAN ACCESS LIMIT SPEED 20 KMPH AND RANGE OF 1KM</div>
+                </div>
+                <div class="n n3">
+                    <div class="nt t3">TURBO MODE ACTIVATED! YOU CAN ACCESS MAX SPEED 100 KMPH AND MAX RANGE!</div>
+                </div>
+                <div class="rules">
+                    <div class="r">
+                        <img class="i" src="-1_orig.jpeg">
+                        <div class="r1">Not Needed</div> 
+                    </div>
+                    <div class="r">
+                        <img class="i" src="-1_orig.jpeg">
+                        <div class="r2">Not Mandatory</div>
+                    </div>
+                    <div class="r">
+                        <img class="i" src="-1_orig.jpeg">
+                        <div class="r3">Mandatory</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hedis">H.E.D.I.S</div>
+        <div class="goldbox"></div>
+        <div class="blackbox"></div>
+    </div>
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
